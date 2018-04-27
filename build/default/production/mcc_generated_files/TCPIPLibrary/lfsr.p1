@@ -1,0 +1,213 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;lfsr.h: 44: typedef uint8_t lfsr_t;
+[; ;lfsr.h: 45: int lfsr_getSequenceCount(void);
+[; ;lfsr.h: 46: lfsr_t lfsr_getSequence(void);
+[; ;lfsr.h: 47: void lfsr_reset(void);
+[; ;lfsr.h: 48: void lfsr_setSequence(int s);
+[; ;lfsr.h: 49: lfsr_t lfsr(void);
+[; ;lfsr.h: 50: lfsr_t lfsrWithSeed(uint8_t lfsrSeed);
+"45 mcc_generated_files/TCPIPLibrary/lfsr.c
+[v _sequenceIndex `i ~T0 @X0 1 s ]
+[i _sequenceIndex
+-> 0 `i
+]
+[; ;lfsr.c: 45: static int sequenceIndex = 0;
+"46
+[v _xorSequences `Cuc ~T0 @X0 -> 0 `x e ]
+[i _xorSequences
+:U ..
+-> -> 65 `i `uc
+-> -> 68 `i `uc
+-> -> 71 `i `uc
+-> -> 72 `i `uc
+-> -> 78 `i `uc
+-> -> 83 `i `uc
+-> -> 85 `i `uc
+-> -> 92 `i `uc
+-> -> 95 `i `uc
+-> -> 96 `i `uc
+-> -> 101 `i `uc
+-> -> 105 `i `uc
+-> -> 106 `i `uc
+-> -> 114 `i `uc
+-> -> 119 `i `uc
+-> -> 120 `i `uc
+-> -> 123 `i `uc
+-> -> 126 `i `uc
+..
+]
+[; ;lfsr.c: 46: const lfsr_t xorSequences[] = {0x41,0x44,0x47,0x48,0x4E,0x53,0x55,0x5C,0x5F,0x60,0x65,0x69,0x6A,0x72,0x77,0x78,0x7B,0x7E};
+"47
+[v _xor_mask `uc ~T0 @X0 1 e ]
+[i _xor_mask
+-> -> 65 `i `uc
+]
+[; ;lfsr.c: 47: lfsr_t xor_mask = 0x41;
+"48
+[v _lfsr_value `uc ~T0 @X0 1 e ]
+[i _lfsr_value
+-> -> 64 `i `uc
+]
+[; ;lfsr.c: 48: lfsr_t lfsr_value = 0x40;
+"50
+[v _lfsr_getSequence `(uc ~T0 @X0 1 ef ]
+"51
+{
+[; ;lfsr.c: 50: lfsr_t lfsr_getSequence(void)
+[; ;lfsr.c: 51: {
+[e :U _lfsr_getSequence ]
+[f ]
+[; ;lfsr.c: 52: return xorSequences[sequenceIndex];
+"52
+[e ) *U + &U _xorSequences * -> -> _sequenceIndex `ui `ux -> -> # *U &U _xorSequences `ui `ux ]
+[e $UE 1  ]
+[; ;lfsr.c: 53: }
+"53
+[e :UE 1 ]
+}
+"55
+[v _lfsr_getSequenceCount `(i ~T0 @X0 1 ef ]
+"56
+{
+[; ;lfsr.c: 55: int lfsr_getSequenceCount(void)
+[; ;lfsr.c: 56: {
+[e :U _lfsr_getSequenceCount ]
+[f ]
+[; ;lfsr.c: 57: return sizeof(xorSequences)/sizeof(*xorSequences);
+"57
+[e ) -> / -> # _xorSequences `ui -> # *U &U _xorSequences `ui `i ]
+[e $UE 2  ]
+[; ;lfsr.c: 58: }
+"58
+[e :UE 2 ]
+}
+"60
+[v _lfsr_reset `(v ~T0 @X0 1 ef ]
+"61
+{
+[; ;lfsr.c: 60: void lfsr_reset(void)
+[; ;lfsr.c: 61: {
+[e :U _lfsr_reset ]
+[f ]
+[; ;lfsr.c: 62: lfsr_value = 0x40;
+"62
+[e = _lfsr_value -> -> 64 `i `uc ]
+[; ;lfsr.c: 63: }
+"63
+[e :UE 3 ]
+}
+"65
+[v _lfsr_setSequence `(v ~T0 @X0 1 ef1`i ]
+"66
+{
+[; ;lfsr.c: 65: void lfsr_setSequence(int s)
+[; ;lfsr.c: 66: {
+[e :U _lfsr_setSequence ]
+"65
+[v _s `i ~T0 @X0 1 r1 ]
+"66
+[f ]
+[; ;lfsr.c: 67: s %= sizeof(xorSequences)/sizeof(*xorSequences);
+"67
+[e =% _s / -> # _xorSequences `ui -> # *U &U _xorSequences `ui ]
+[; ;lfsr.c: 68: xor_mask = xorSequences[s];
+"68
+[e = _xor_mask *U + &U _xorSequences * -> -> _s `ui `ux -> -> # *U &U _xorSequences `ui `ux ]
+[; ;lfsr.c: 69: }
+"69
+[e :UE 4 ]
+}
+"71
+[v _lfsr `(uc ~T0 @X0 1 ef ]
+"72
+{
+[; ;lfsr.c: 71: lfsr_t lfsr(void)
+[; ;lfsr.c: 72: {
+[e :U _lfsr ]
+[f ]
+"73
+[v _lsb `uc ~T0 @X0 1 a ]
+[; ;lfsr.c: 73: char lsb = lfsr_value & 1;
+[e = _lsb -> & -> _lfsr_value `i -> 1 `i `uc ]
+[; ;lfsr.c: 74: lfsr_value >>= 1;
+"74
+[e =>> _lfsr_value -> 1 `i ]
+[; ;lfsr.c: 75: if (lsb)
+"75
+[e $ ! != -> _lsb `i -> -> -> 0 `i `uc `i 6  ]
+[; ;lfsr.c: 76: lfsr_value ^= xor_mask;
+"76
+[e =^ _lfsr_value _xor_mask ]
+[e :U 6 ]
+[; ;lfsr.c: 77: return lfsr_value & 0x7f;
+"77
+[e ) -> & -> _lfsr_value `i -> 127 `i `uc ]
+[e $UE 5  ]
+[; ;lfsr.c: 78: }
+"78
+[e :UE 5 ]
+}
+"80
+[v _lfsrWithSeed `(uc ~T0 @X0 1 ef1`uc ]
+"81
+{
+[; ;lfsr.c: 80: lfsr_t lfsrWithSeed(uint8_t lfsrSeed)
+[; ;lfsr.c: 81: {
+[e :U _lfsrWithSeed ]
+"80
+[v _lfsrSeed `uc ~T0 @X0 1 r1 ]
+"81
+[f ]
+[; ;lfsr.c: 82: lfsr_value = lfsrSeed;
+"82
+[e = _lfsr_value _lfsrSeed ]
+"84
+[v _lsb `uc ~T0 @X0 1 a ]
+[; ;lfsr.c: 84: char lsb = lfsr_value & 1;
+[e = _lsb -> & -> _lfsr_value `i -> 1 `i `uc ]
+[; ;lfsr.c: 85: lfsr_value >>= 1;
+"85
+[e =>> _lfsr_value -> 1 `i ]
+[; ;lfsr.c: 86: if (lsb)
+"86
+[e $ ! != -> _lsb `i -> -> -> 0 `i `uc `i 8  ]
+[; ;lfsr.c: 87: lfsr_value ^= xor_mask;
+"87
+[e =^ _lfsr_value _xor_mask ]
+[e :U 8 ]
+[; ;lfsr.c: 88: return lfsr_value & 0x7f;
+"88
+[e ) -> & -> _lfsr_value `i -> 127 `i `uc ]
+[e $UE 7  ]
+[; ;lfsr.c: 89: }
+"89
+[e :UE 7 ]
+}

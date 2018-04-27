@@ -1,0 +1,24 @@
+
+# 1 "mcc_generated_files/device_config.c"
+
+
+# 50
+#pragma config WDT = OFF
+#pragma config STVR = ON
+#pragma config XINST = OFF
+#pragma config DEBUG = OFF
+
+
+#pragma config CP0 = OFF
+
+
+#pragma config FOSC = ECPLL
+#pragma config FOSC2 = ON
+#pragma config FCMEN = ON
+#pragma config IESO = ON
+
+
+#pragma config WDTPS = 32768
+
+
+#pragma config ETHLED = ON

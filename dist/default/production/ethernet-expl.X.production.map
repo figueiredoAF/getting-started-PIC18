@@ -1,0 +1,3705 @@
+Microchip MPLAB XC8 Compiler V1.45 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
+  -h+dist/default/production\ethernet-expl.X.production.sym \
+  --cmf=dist/default/production\ethernet-expl.X.production.cmf -z \
+  -Q18F67J60 -oC:\Users\Samsung\AppData\Local\Temp\sa54.2 \
+  -Mdist/default/production/ethernet-expl.X.production.map -E1 -ver=XC8 \
+  -ASTACK=01C3h-0e7dh -pstack=STACK -ACODE=00h-01FFF7h -ACONST=00h-01FFF7h \
+  -ASMALLCONST=01000h-010FFhx495,01FF00h-01FFF7h \
+  -AMEDIUMCONST=01000h-0FFFFh,011000h-01FFF7h -ACOMRAM=01h-05Fh \
+  -AABS1=00h-0E7Fh,0F00h-0F5Fh -ABIGRAM=01h-0E7Fh,0F00h-0F5Fh \
+  -ARAM=060h-0FFh,0100h-01FFhx13,0E00h-0E7Fh,0F00h-0F5Fh -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0E7Fh -ABANK15=0F00h-0F5Fh \
+  -ASFR=0E80h-0EFFh,0F60h-0FFFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init -pramtop=01000h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h -ACONFIG=01FFF8h-01FFFDh -pconfig=CONFIG \
+  -pjflash_buffer=01F800h \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
+  C:\Users\Samsung\AppData\Local\Temp\sa54.obj \
+  dist/default/production\ethernet-expl.X.production.obj 
+
+Object code version is 3.11
+
+Machine type is 18F67J60
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Samsung\AppData\Local\Temp\sa54.obj
+                init                                 AA       AA        4        4       0
+                reset_vec                             0        0        4        0       0
+                config                            1FFF8    1FFF8        6    1FFF8       0
+dist/default/production\ethernet-expl.X.production.obj
+                intcode                               8        8       A2        4       0
+                temp                                 4B       4B        1        1       1
+                smallconst                         1000     1000       8E      800       0
+                text70                             373A     373A       10      847       0
+                text69                             37D8     37D8        2      847       0
+                text68                             366C     366C       24      847       0
+                text67                             3690     3690       1C      847       0
+                text66                             357C     357C       2C      847       0
+                text64                             354E     354E       2E      847       0
+                text63                             34EE     34EE       32      847       0
+                text62                             2EA4     2EA4       74      847       0
+                text61                             36FA     36FA       18      847       0
+                text60                             35FA     35FA       28      847       0
+                text59                             3258     3258       46      847       0
+                text58                             37B2     37B2        A      847       0
+                text57                             31B6     31B6       52      847       0
+                text56                             33DC     33DC       3C      847       0
+                text55                             37C8     37C8        6      847       0
+                text54                             3418     3418       3A      847       0
+                text53                             37A8     37A8        A      847       0
+                text52                             2426     2426      19A      847       0
+                text51                             32E2     32E2       44      847       0
+                text50                             108E     108E      542      847       0
+                text49                             2F18     2F18       6E      847       0
+                text48                             3452     3452       36      847       0
+                text47                             28C6     28C6      124      847       0
+                text46                             3208     3208       50      847       0
+                text45                             3520     3520       2E      847       0
+                text44                             2E22     2E22       82      847       0
+                text43                             2FEC     2FEC       66      847       0
+                text42                             37D6     37D6        2      847       0
+                text41                             1ABA     1ABA      4AC      847       0
+                text40                             33A0     33A0       3C      847       0
+                text39                             3160     3160       56      847       0
+                text38                             3488     3488       34      847       0
+                text37                             3622     3622       26      847       0
+                text36                             2AD0     2AD0       C8      847       0
+                text35                             3364     3364       3C      847       0
+                text34                             329E     329E       44      847       0
+                text33                             2B98     2B98       BC      847       0
+                text32                             2CF6     2CF6       9E      847       0
+                text31                             30B0     30B0       5A      847       0
+                text30                             1F66     1F66      2B2      847       0
+                text29                             3766     3766        E      847       0
+                text28                             36E0     36E0       1A      847       0
+                text27                             379E     379E        A      847       0
+                text26                             2218     2218      20E      847       0
+                text25                             2750     2750      176      847       0
+                text24                             29EA     29EA       E6      847       0
+                text23                             15D0     15D0      4EA      847       0
+                text22                             3794     3794        A      847       0
+                text21                             3758     3758        E      847       0
+                text20                             2C54     2C54       A2      847       0
+                text19                             310A     310A       56      847       0
+                text18                             37CE     37CE        4      847       0
+                text17                             3052     3052       5E      847       0
+                text16                             34BC     34BC       32      847       0
+                text15                             378A     378A        A      847       0
+                text14                             35D2     35D2       28      847       0
+                text13                             25C0     25C0      190      847       0
+                text12                             2D94     2D94       8E      847       0
+                text11                             37C2     37C2        6      847       0
+                text10                             3774     3774        C      847       0
+                text9                              374A     374A        E      847       0
+                text8                              3648     3648       24      847       0
+                text7                              36C6     36C6       1A      847       0
+                text6                              36AC     36AC       1A      847       0
+                text5                              3780     3780        A      847       0
+                text4                              3326     3326       3E      847       0
+                text3                              35A8     35A8       2A      847       0
+                text2                              3712     3712       16      847       0
+                text1                              37D4     37D4        2      847       0
+                text0                              3728     3728       12      847       0
+                cstackCOMRAM                          1        1       37        1       1
+                cstackBANK0                          60       60       89       60       1
+                cstackBANK1                         1BF      1BF        4      100       1
+                dataBANK1                           1B9      1B9        6      100       1
+                bssBANK1                            100      100       B9      100       1
+                bssBANK0                             E9       E9       14       60       1
+                dataCOMRAM                           49       49        2        1       1
+                bssCOMRAM                            38       38        F        1       1
+                cinit                              2F86     2F86       66      847       0
+                nvBANK0                              FD       FD        3       60       1
+                nvCOMRAM                             47       47        2        1       1
+                idataBANK1                         37BC     37BC        6      847       0
+                idataCOMRAM                        37D2     37D2        2      847       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                intcode                               8        8       A2         0
+                init                                 AA       AA        4         0
+                reset_vec                             0        0        4         0
+                text70                             373A     373A       10         0
+                text69                             37D8     37D8        2         0
+                text68                             366C     366C       24         0
+                text67                             3690     3690       1C         0
+                text66                             357C     357C       2C         0
+                text64                             354E     354E       2E         0
+                text63                             34EE     34EE       32         0
+                text62                             2EA4     2EA4       74         0
+                text61                             36FA     36FA       18         0
+                text60                             35FA     35FA       28         0
+                text59                             3258     3258       46         0
+                text58                             37B2     37B2        A         0
+                text57                             31B6     31B6       52         0
+                text56                             33DC     33DC       3C         0
+                text55                             37C8     37C8        6         0
+                text54                             3418     3418       3A         0
+                text53                             37A8     37A8        A         0
+                text52                             2426     2426      19A         0
+                text51                             32E2     32E2       44         0
+                text50                             108E     108E      542         0
+                text49                             2F18     2F18       6E         0
+                text48                             3452     3452       36         0
+                text47                             28C6     28C6      124         0
+                text46                             3208     3208       50         0
+                text45                             3520     3520       2E         0
+                text44                             2E22     2E22       82         0
+                text43                             2FEC     2FEC       66         0
+                text42                             37D6     37D6        2         0
+                text41                             1ABA     1ABA      4AC         0
+                text40                             33A0     33A0       3C         0
+                text39                             3160     3160       56         0
+                text38                             3488     3488       34         0
+                text37                             3622     3622       26         0
+                text36                             2AD0     2AD0       C8         0
+                text35                             3364     3364       3C         0
+                text34                             329E     329E       44         0
+                text33                             2B98     2B98       BC         0
+                text32                             2CF6     2CF6       9E         0
+                text31                             30B0     30B0       5A         0
+                text30                             1F66     1F66      2B2         0
+                text29                             3766     3766        E         0
+                text28                             36E0     36E0       1A         0
+                text27                             379E     379E        A         0
+                text26                             2218     2218      20E         0
+                text25                             2750     2750      176         0
+                text24                             29EA     29EA       E6         0
+                text23                             15D0     15D0      4EA         0
+                text22                             3794     3794        A         0
+                text21                             3758     3758        E         0
+                text20                             2C54     2C54       A2         0
+                text19                             310A     310A       56         0
+                text18                             37CE     37CE        4         0
+                text17                             3052     3052       5E         0
+                text16                             34BC     34BC       32         0
+                text15                             378A     378A        A         0
+                text14                             35D2     35D2       28         0
+                text13                             25C0     25C0      190         0
+                text12                             2D94     2D94       8E         0
+                text11                             37C2     37C2        6         0
+                text10                             3774     3774        C         0
+                text9                              374A     374A        E         0
+                text8                              3648     3648       24         0
+                text7                              36C6     36C6       1A         0
+                text6                              36AC     36AC       1A         0
+                text5                              3780     3780        A         0
+                text4                              3326     3326       3E         0
+                text3                              35A8     35A8       2A         0
+                text2                              3712     3712       16         0
+                text1                              37D4     37D4        2         0
+                text0                              3728     3728       12         0
+                cinit                              2F86     2F86       66         0
+                idataBANK1                         37BC     37BC        6         0
+                idataCOMRAM                        37D2     37D2        2         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                         1000     1000       8E         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                temp                                 4B       4B        1         1
+                cstackCOMRAM                          1        1       37         1
+                dataCOMRAM                           49       49        2         1
+                bssCOMRAM                            38       38        F         1
+                nvCOMRAM                             47       47        2         1
+
+        CLASS   ABS1           
+                abs_s1                              E7E      E7E        2         1
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          60       60       89         1
+                bssBANK0                             E9       E9       14         1
+                nvBANK0                              FD       FD        3         1
+
+        CLASS   BANK1          
+                cstackBANK1                         1BF      1BF        4         1
+                dataBANK1                           1B9      1B9        6         1
+                bssBANK1                            100      100       B9         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BANK13         
+
+        CLASS   BANK14         
+
+        CLASS   BANK15         
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                            1FFF8    1FFF8        6         0
+
+        CLASS   IDLOC          
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  00004B  00004C         1       1  COMRAM  
+                intcode                        000008  0000A6  0000AE         4       0  CODE    
+                cstackBANK0                    000060  0000A0  000100        60       1  BANK0   
+                bssBANK1                       000100  0000C3  0001C3       100       1  BANK1   
+                smallconst                     001000  00008E  00108E       800       0  SMALLCON
+                text50                         00108E  00274C  0037DA       847       0  CODE    
+                config                         01FFF8  000006  01FFFE     1FFF8       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK1            001C3-001FF              3D
+        BANK10           00A00-00AFF             100
+        BANK11           00B00-00BFF             100
+        BANK12           00C00-00CFF             100
+        BANK13           00D00-00DFF             100
+        BANK14           00E00-00E7D              7E
+        BANK15           00F00-00F5F              60
+        BANK2            00200-002FF             100
+        BANK3            00300-003FF             100
+        BANK4            00400-004FF             100
+        BANK5            00500-005FF             100
+        BANK6            00600-006FF             100
+        BANK7            00700-007FF             100
+        BANK8            00800-008FF             100
+        BANK9            00900-009FF             100
+        BIGRAM           0004C-0005F              14
+                         001C3-00E7D             CBB
+                         00F00-00F5F              60
+        CODE             00004-00007               4
+                         000AE-00FFF             F52
+                         037DA-1FFF7           1C81E
+        COMRAM           0004C-0005F              14
+        CONST            00004-00007               4
+                         000AE-00FFF             F52
+                         037DA-1FFF7           1C81E
+        MEDIUMCONST      037DA-0FFFF            C826
+                         11000-1FFF7            EFF8
+        RAM              001C3-00E7D             100
+                         00F00-00F5F              60
+        SFR              00E80-00EFF              80
+                         00F60-00FFF              A0
+        SMALLCONST       037DA-1FFF7             100
+        STACK            001C3-00E7D             CBB
+
+                                  Symbol Table
+
+?_ARPV4_Lookup                            cstackCOMRAM  00015
+?_ETH_ComputeChecksum                     cstackCOMRAM  00015
+?_ETH_GetReadPtr                          cstackCOMRAM  00015
+?_ETH_Read16                              cstackCOMRAM  00015
+?_ETH_ReadBlock                           cstackCOMRAM  00015
+?_ETH_RxComputeChecksum                   cstackCOMRAM  00027
+?_ETH_TxComputeChecksum                   cstackCOMRAM  00027
+?_ETH_readLinkStatus                      cstackCOMRAM  00020
+?_MAC_getAddress                          cstackCOMRAM  00015
+?_PHY_Read                                cstackCOMRAM  00017
+?___lldiv                                 cstackCOMRAM  00015
+?___llmod                                 cstackCOMRAM  00022
+?___wmul                                  cstackCOMRAM  00015
+?__doprnt                                 cstackCOMRAM  0002B
+?_printf                                  cstackBANK0   0006A
+?_time                                    cstackCOMRAM  00015
+ARPV4_Init@x                              cstackCOMRAM  00017
+ARPV4_Lookup@entry_pointer                cstackCOMRAM  0001D
+ARPV4_Lookup@ip_address                   cstackCOMRAM  00015
+ARPV4_Lookup@x                            cstackCOMRAM  0001F
+ARPV4_Packet@arpPtr                       cstackBANK0   00084
+ARPV4_Packet@entryPointer                 cstackBANK0   00088
+ARPV4_Packet@header                       cstackBANK0   0008A
+ARPV4_Packet@length                       cstackBANK0   00080
+ARPV4_Packet@mergeFlag                    cstackBANK0   00082
+ARPV4_Packet@ret                          cstackBANK0   00083
+ARPV4_Packet@x                            cstackBANK0   00086
+ARPV4_Packet@x_189                        cstackBANK0   00087
+ARPV4_Request@destAddress                 cstackCOMRAM  00020
+ARPV4_Request@header                      cstackBANK0   0007D
+ARPV4_Request@ret                         cstackBANK0   0007C
+ARPV4_Update@entryPointer                 cstackCOMRAM  00015
+ARPV4_Update@x                            cstackCOMRAM  00017
+ETH_CheckLinkUp@value                     cstackCOMRAM  00024
+ETH_ComputeChecksum@cksm                  cstackCOMRAM  00021
+ETH_ComputeChecksum@len                   cstackCOMRAM  00015
+ETH_ComputeChecksum@seed                  cstackCOMRAM  00017
+ETH_ComputeChecksum@v                     cstackCOMRAM  00025
+ETH_Copy@len                              cstackBANK0   00079
+ETH_Copy@timer                            cstackBANK0   0007B
+ETH_Copy@tmp_len                          cstackBANK0   0007D
+ETH_Dump@length                           cstackCOMRAM  00015
+ETH_GetMAC@mac                            cstackCOMRAM  00015
+ETH_Init@mac                              cstackCOMRAM  0002A
+ETH_Init@phycon1Value                     cstackCOMRAM  00028
+ETH_Insert@current_tx_ptr                 cstackCOMRAM  0001B
+ETH_Insert@data                           cstackCOMRAM  00015
+ETH_Insert@len                            cstackCOMRAM  00017
+ETH_Insert@offset                         cstackCOMRAM  00019
+ETH_Read16@ret                            cstackCOMRAM  00017
+ETH_ReadBlock@buffer                      cstackCOMRAM  00015
+ETH_ReadBlock@len                         cstackCOMRAM  00019
+ETH_ReadBlock@length                      cstackCOMRAM  00017
+ETH_ReadBlock@p                           cstackCOMRAM  0001B
+ETH_RxComputeChecksum@cksm                cstackCOMRAM  00031
+ETH_RxComputeChecksum@len                 cstackCOMRAM  00027
+ETH_RxComputeChecksum@rxptr               cstackCOMRAM  0002F
+ETH_RxComputeChecksum@seed                cstackCOMRAM  00029
+ETH_Send@packetEnd                        cstackCOMRAM  00015
+ETH_TxComputeChecksum@cksm                cstackCOMRAM  0002F
+ETH_TxComputeChecksum@len                 cstackCOMRAM  00029
+ETH_TxComputeChecksum@position            cstackCOMRAM  00027
+ETH_TxComputeChecksum@rxptr               cstackCOMRAM  0002D
+ETH_TxComputeChecksum@seed                cstackCOMRAM  0002B
+ETH_Write16@data                          cstackCOMRAM  00015
+ETH_Write32@data                          cstackCOMRAM  00015
+ETH_Write8@data                           cstackCOMRAM  00015
+ETH_WriteBlock@buffer                     cstackCOMRAM  00015
+ETH_WriteBlock@length                     cstackCOMRAM  00017
+ETH_WriteBlock@p                          cstackCOMRAM  00019
+ETH_WriteStart@dest_mac                   cstackCOMRAM  00015
+ETH_WriteStart@type                       cstackCOMRAM  00017
+ICMP_EchoReply@cksm                       cstackBANK0   000A5
+ICMP_EchoReply@icmp_cksm_start            cstackBANK0   000A3
+ICMP_EchoReply@identifier                 cstackBANK0   0009F
+ICMP_EchoReply@ipv4Hdr                    cstackBANK0   00099
+ICMP_EchoReply@ipv4PayloadLength          cstackBANK0   000A7
+ICMP_EchoReply@ret                        cstackBANK0   000A9
+ICMP_EchoReply@sequence                   cstackBANK0   000A1
+ICMP_Receive@icmpHdr                      cstackBANK0   000B1
+ICMP_Receive@ipv4Hdr                      cstackBANK0   000AA
+ICMP_Receive@ret                          cstackBANK0   000B0
+IPV4_Packet@cksm                          cstackBANK0   000D4
+IPV4_Packet@hdrLen                        cstackBANK0   000D3
+IPV4_Packet@length                        cstackBANK0   000D1
+IPV4_Send@cksm                            cstackBANK0   00071
+IPV4_Send@payloadLength                   cstackCOMRAM  00033
+IPV4_Send@ret                             cstackBANK0   00070
+IPV4_Send@totalLength                     cstackBANK0   00073
+IPv4_Start@destAddress                    cstackCOMRAM  00024
+IPv4_Start@macAddress                     cstackCOMRAM  00035
+IPv4_Start@protocol                       cstackCOMRAM  00028
+IPv4_Start@ret                            cstackCOMRAM  00037
+IPv4_Start@targetAddress                  cstackCOMRAM  00031
+Network_Manage@now                        cstackBANK1   001BF
+Network_Manage@nowPv                      bssBANK0      000F3
+Network_Read@header                       cstackBANK0   000DA
+PHY_Read@reg                              cstackCOMRAM  0001B
+PHY_Read@ret                              cstackCOMRAM  0001C
+PHY_WaitForBusy@ret                       cstackCOMRAM  00015
+PHY_WaitForBusy@timeout                   cstackCOMRAM  00016
+PHY_Write@GIESave                         cstackCOMRAM  0001A
+PHY_Write@data                            cstackCOMRAM  00017
+PHY_Write@reg                             cstackCOMRAM  00019
+SYSLOG_Write@message                      cstackCOMRAM  00035
+SYSLOG_Write@t                            cstackBANK0   00077
+TMR1_ISR@CountCallBack                    bssCOMRAM     00040
+TMR1_SetInterruptHandler@InterruptHandler cstackCOMRAM  00015
+TMR1_WriteTimer@timerVal                  cstackCOMRAM  00001
+_ADCON1bits                               (abs)         00FC1
+_ARPV4_Init                               text16        034BC
+_ARPV4_Lookup                             text31        030B0
+_ARPV4_Packet                             text50        0108E
+_ARPV4_Request                            text30        01F66
+_ARPV4_Update                             text64        0354E
+_Control_Byte                             bssCOMRAM     00042
+_ECON1                                    (abs)         00FD2
+_ECON1bits                                (abs)         00FD2
+_ECON2                                    (abs)         00EFE
+_EDMADST                                  (abs)         00EF4
+_EDMAND                                   (abs)         00EF2
+_EDMAST                                   (abs)         00EF0
+_EFLOCON                                  (abs)         00E97
+_EIE                                      (abs)         00EFB
+_EIEbits                                  (abs)         00EFB
+_EIRbits                                  (abs)         00F60
+_EPKTCNT                                  (abs)         00ED9
+_ERDPT                                    (abs)         00F7A
+_ERXFCON                                  (abs)         00ED8
+_ERXND                                    (abs)         00EEA
+_ERXRDPT                                  (abs)         00EEC
+_ERXST                                    (abs)         00EE8
+_ESTATbits                                (abs)         00EFD
+_ETH_CheckLinkUp                          text60        035FA
+_ETH_ComputeChecksum                      text47        028C6
+_ETH_Copy                                 text36        02AD0
+_ETH_Dump                                 text45        03520
+_ETH_EdataRead                            text58        037B2
+_ETH_EdataWrite                           text55        037C8
+_ETH_EventHandler                         text59        03258
+_ETH_Flush                                text49        02F18
+_ETH_GetMAC                               text17        03052
+_ETH_GetReadPtr                           text22        03794
+_ETH_Init                                 text13        025C0
+_ETH_Insert                               text34        0329E
+_ETH_NextPacketUpdate                     text48        03452
+_ETH_Read16                               text35        03364
+_ETH_ReadBlock                            text57        031B6
+_ETH_ResetByteCount                       text53        037A8
+_ETH_RxComputeChecksum                    text46        03208
+_ETH_Send                                 text56        033DC
+_ETH_TxComputeChecksum                    text33        02B98
+_ETH_Write16                              text29        03766
+_ETH_Write32                              text28        036E0
+_ETH_Write8                               text27        0379E
+_ETH_WriteBlock                           text54        03418
+_ETH_WriteStart                           text52        02426
+_ETH_readLinkStatus                       text61        036FA
+_ETXND                                    (abs)         00EE6
+_ETXST                                    (abs)         00EE4
+_EWRPT                                    (abs)         00EE2
+_GIE                                      (abs)         07F97
+_ICMP_EchoReply                           text25        02750
+_ICMP_Receive                             text24        029EA
+_INTCON                                   (abs)         00FF2
+_INTCONbits                               (abs)         00FF2
+_INTERRUPT_Initialize                     text18        037CE
+_INTERRUPT_InterruptManager               intcode       00008
+_IPV4_Init                                text11        037C2
+_IPV4_Packet                              text23        015D0
+_IPV4_Send                                text32        02CF6
+_IPv4_Start                               text26        02218
+_LATA                                     (abs)         00F89
+_LATB                                     (abs)         00F8A
+_LATC                                     (abs)         00F8B
+_LATD                                     (abs)         00F8C
+_LATE                                     (abs)         00F8D
+_LATF                                     (abs)         00F8E
+_LATG                                     (abs)         00F8F
+_MAADR1                                   (abs)         00E84
+_MAADR2                                   (abs)         00E85
+_MAADR3                                   (abs)         00E82
+_MAADR4                                   (abs)         00E83
+_MAADR5                                   (abs)         00E80
+_MAADR6                                   (abs)         00E81
+_MABBIPG                                  (abs)         00EA4
+_MACON1                                   (abs)         00EA0
+_MACON3                                   (abs)         00EA2
+_MACON4                                   (abs)         00EA3
+_MAC_getAddress                           text15        0378A
+_MAIPG                                    (abs)         00EA6
+_MAMXFL                                   (abs)         00EAA
+_MICMD                                    (abs)         00EB2
+_MICMDbits                                (abs)         00EB2
+_MIRD                                     (abs)         00EB8
+_MIREGADR                                 (abs)         00EB4
+_MISTATbits                               (abs)         00E8A
+_MIWR                                     (abs)         00EB6
+_Network_Init                             text6         036AC
+_Network_Manage                           text19        0310A
+_Network_Read                             text20        02C54
+_Network_SaveStartPosition                text21        03758
+_Network_WaitForLink                      text10        03774
+_OSCCON                                   (abs)         00FD3
+_OSCILLATOR_Initialize                    text5         03780
+_OSCTUNE                                  (abs)         00F9B
+_PHY_Read                                 text62        02EA4
+_PHY_WaitForBusy                          text63        034EE
+_PHY_Write                                text14        035D2
+_PIE1bits                                 (abs)         00F9D
+_PIN_MANAGER_Initialize                   text4         03326
+_PIR1bits                                 (abs)         00F9E
+_PIR2bits                                 (abs)         00FA1
+_RCONbits                                 (abs)         00FD0
+_RXRST                                    (abs)         07E96
+_SYSLOG_Write                             text38        03488
+_SYSTEM_Initialize                        text2         03712
+_T1CON                                    (abs)         00FCD
+_T1CONbits                                (abs)         00FCD
+_TMR1                                     (abs)         00FCE
+_TMR1H                                    (abs)         00FCF
+_TMR1L                                    (abs)         00FCE
+_TMR1_CallBack                            text68        0366C
+_TMR1_DefaultInterruptHandler             text69        037D8
+_TMR1_ISR                                 text66        0357C
+_TMR1_Initialize                          text3         035A8
+_TMR1_InterruptHandler                    nvBANK0       000FD
+_TMR1_SetInterruptHandler                 text9         0374A
+_TMR1_WriteTimer                          text67        03690
+_TRISA                                    (abs)         00F92
+_TRISB                                    (abs)         00F93
+_TRISC                                    (abs)         00F94
+_TRISD                                    (abs)         00F95
+_TRISE                                    (abs)         00F96
+_TRISF                                    (abs)         00F97
+_TRISG                                    (abs)         00F98
+__CFG_CP0$OFF                             (abs)         00000
+__CFG_DEBUG$OFF                           (abs)         00000
+__CFG_ETHLED$ON                           (abs)         00000
+__CFG_FCMEN$ON                            (abs)         00000
+__CFG_FOSC$ECPLL                          (abs)         00000
+__CFG_FOSC2$ON                            (abs)         00000
+__CFG_IESO$ON                             (abs)         00000
+__CFG_STVR$ON                             (abs)         00000
+__CFG_WDT$OFF                             (abs)         00000
+__CFG_WDTPS$32768                         (abs)         00000
+__CFG_XINST$OFF                           (abs)         00000
+__HRAM                                    (abs)         00000
+__Habs1                                   abs1          00000
+__Hbank0                                  bank0         00000
+__Hbank1                                  bank1         00000
+__Hbank10                                 bank10        00000
+__Hbank11                                 bank11        00000
+__Hbank12                                 bank12        00000
+__Hbank13                                 bank13        00000
+__Hbank14                                 bank14        00000
+__Hbank15                                 bank15        00000
+__Hbank2                                  bank2         00000
+__Hbank3                                  bank3         00000
+__Hbank4                                  bank4         00000
+__Hbank5                                  bank5         00000
+__Hbank6                                  bank6         00000
+__Hbank7                                  bank7         00000
+__Hbank8                                  bank8         00000
+__Hbank9                                  bank9         00000
+__Hbigbss                                 bigbss        00000
+__Hbigdata                                bigdata       00000
+__Hbigram                                 bigram        00000
+__Hbss                                    bss           00000
+__HbssBANK0                               bssBANK0      00000
+__HbssBANK1                               bssBANK1      00000
+__HbssCOMRAM                              bssCOMRAM     00000
+__Hcinit                                  cinit         00000
+__Hclrtext                                clrtext       00000
+__Hcomram                                 comram        00000
+__Hconfig                                 config        1FFFE
+__Hconst                                  const         00000
+__HcstackBANK0                            cstackBANK0   00000
+__HcstackBANK1                            cstackBANK1   00000
+__HcstackCOMRAM                           cstackCOMRAM  00000
+__Hdata                                   data          00000
+__HdataBANK1                              dataBANK1     00000
+__HdataCOMRAM                             dataCOMRAM    00000
+__Hfarbss                                 farbss        00000
+__Hfardata                                fardata       00000
+__Hibigdata                               ibigdata      00000
+__Hidata                                  idata         00000
+__HidataBANK1                             idataBANK1    00000
+__HidataCOMRAM                            idataCOMRAM   00000
+__Hidloc                                  idloc         00000
+__Hifardata                               ifardata      00000
+__Hinit                                   init          000AE
+__Hintcode                                intcode       000AA
+__Hintcode_body                           intcode_body  00000
+__Hintcodelo                              intcodelo     000AA
+__Hintentry                               intentry      00000
+__Hintret                                 intret        00000
+__Hintsave_regs                           intsave_regs  00000
+__Hirdata                                 irdata        00000
+__Hjflash_buffer                          jflash_buffer 1F800
+__Hmediumconst                            mediumconst   00000
+__HnvBANK0                                nvBANK0       00000
+__HnvCOMRAM                               nvCOMRAM      00000
+__HnvFARRAM                               nvFARRAM      00000
+__Hnvbit                                  nvbit         00000
+__Hnvrram                                 nvrram        00000
+__Hparam                                  rparam        00000
+__Hpowerup                                powerup       000AA
+__Hram                                    ram           00000
+__Hramtop                                 ramtop        01000
+__Hrbit                                   rbit          00000
+__Hrbss                                   rbss          00000
+__Hrdata                                  rdata         00000
+__Hreset_vec                              reset_vec     00004
+__Hrparam                                 rparam        00000
+__Hsfr                                    sfr           00000
+__Hsmallconst                             smallconst    0108E
+__Hspace_0                                (abs)         1FFFE
+__Hspace_1                                (abs)         001C3
+__Hspace_2                                (abs)         00000
+__Hstack                                  stack         00000
+__Hstruct                                 struct        00000
+__Htemp                                   temp          0004C
+__Htext                                   text          00000
+__Htext0                                  text0         00000
+__Htext1                                  text1         00000
+__Htext10                                 text10        00000
+__Htext11                                 text11        00000
+__Htext12                                 text12        00000
+__Htext13                                 text13        00000
+__Htext14                                 text14        00000
+__Htext15                                 text15        00000
+__Htext16                                 text16        00000
+__Htext17                                 text17        00000
+__Htext18                                 text18        00000
+__Htext19                                 text19        00000
+__Htext2                                  text2         00000
+__Htext20                                 text20        00000
+__Htext21                                 text21        00000
+__Htext22                                 text22        00000
+__Htext23                                 text23        00000
+__Htext24                                 text24        00000
+__Htext25                                 text25        00000
+__Htext26                                 text26        00000
+__Htext27                                 text27        00000
+__Htext28                                 text28        00000
+__Htext29                                 text29        00000
+__Htext3                                  text3         00000
+__Htext30                                 text30        00000
+__Htext31                                 text31        00000
+__Htext32                                 text32        00000
+__Htext33                                 text33        00000
+__Htext34                                 text34        00000
+__Htext35                                 text35        00000
+__Htext36                                 text36        00000
+__Htext37                                 text37        00000
+__Htext38                                 text38        00000
+__Htext39                                 text39        00000
+__Htext4                                  text4         00000
+__Htext40                                 text40        00000
+__Htext41                                 text41        00000
+__Htext42                                 text42        00000
+__Htext43                                 text43        00000
+__Htext44                                 text44        00000
+__Htext45                                 text45        00000
+__Htext46                                 text46        00000
+__Htext47                                 text47        00000
+__Htext48                                 text48        00000
+__Htext49                                 text49        00000
+__Htext5                                  text5         00000
+__Htext50                                 text50        00000
+__Htext51                                 text51        00000
+__Htext52                                 text52        00000
+__Htext53                                 text53        00000
+__Htext54                                 text54        00000
+__Htext55                                 text55        00000
+__Htext56                                 text56        00000
+__Htext57                                 text57        00000
+__Htext58                                 text58        00000
+__Htext59                                 text59        00000
+__Htext6                                  text6         00000
+__Htext60                                 text60        00000
+__Htext61                                 text61        00000
+__Htext62                                 text62        00000
+__Htext63                                 text63        00000
+__Htext64                                 text64        00000
+__Htext66                                 text66        00000
+__Htext67                                 text67        00000
+__Htext68                                 text68        00000
+__Htext69                                 text69        00000
+__Htext7                                  text7         00000
+__Htext70                                 text70        00000
+__Htext71                                 text71        00000
+__Htext8                                  text8         00000
+__Htext9                                  text9         00000
+__LRAM                                    (abs)         00001
+__Labs1                                   abs1          00000
+__Lbank0                                  bank0         00000
+__Lbank1                                  bank1         00000
+__Lbank10                                 bank10        00000
+__Lbank11                                 bank11        00000
+__Lbank12                                 bank12        00000
+__Lbank13                                 bank13        00000
+__Lbank14                                 bank14        00000
+__Lbank15                                 bank15        00000
+__Lbank2                                  bank2         00000
+__Lbank3                                  bank3         00000
+__Lbank4                                  bank4         00000
+__Lbank5                                  bank5         00000
+__Lbank6                                  bank6         00000
+__Lbank7                                  bank7         00000
+__Lbank8                                  bank8         00000
+__Lbank9                                  bank9         00000
+__Lbigbss                                 bigbss        00000
+__Lbigdata                                bigdata       00000
+__Lbigram                                 bigram        00000
+__Lbss                                    bss           00000
+__LbssBANK0                               bssBANK0      00000
+__LbssBANK1                               bssBANK1      00000
+__LbssCOMRAM                              bssCOMRAM     00000
+__Lcinit                                  cinit         00000
+__Lclrtext                                clrtext       00000
+__Lcomram                                 comram        00000
+__Lconfig                                 config        1FFF8
+__Lconst                                  const         00000
+__LcstackBANK0                            cstackBANK0   00000
+__LcstackBANK1                            cstackBANK1   00000
+__LcstackCOMRAM                           cstackCOMRAM  00000
+__Ldata                                   data          00000
+__LdataBANK1                              dataBANK1     00000
+__LdataCOMRAM                             dataCOMRAM    00000
+__Lfarbss                                 farbss        00000
+__Lfardata                                fardata       00000
+__Libigdata                               ibigdata      00000
+__Lidata                                  idata         00000
+__LidataBANK1                             idataBANK1    00000
+__LidataCOMRAM                            idataCOMRAM   00000
+__Lidloc                                  idloc         00000
+__Lifardata                               ifardata      00000
+__Linit                                   init          000AA
+__Lintcode                                intcode       00008
+__Lintcode_body                           intcode_body  00000
+__Lintcodelo                              intcodelo     000AA
+__Lintentry                               intentry      00000
+__Lintret                                 intret        00000
+__Lintsave_regs                           intsave_regs  00000
+__Lirdata                                 irdata        00000
+__Ljflash_buffer                          jflash_buffer 1F800
+__Lmediumconst                            mediumconst   00000
+__LnvBANK0                                nvBANK0       00000
+__LnvCOMRAM                               nvCOMRAM      00000
+__LnvFARRAM                               nvFARRAM      00000
+__Lnvbit                                  nvbit         00000
+__Lnvrram                                 nvrram        00000
+__Lparam                                  rparam        00000
+__Lpowerup                                powerup       000AA
+__Lram                                    ram           00000
+__Lramtop                                 ramtop        01000
+__Lrbit                                   rbit          00000
+__Lrbss                                   rbss          00000
+__Lrdata                                  rdata         00000
+__Lreset_vec                              reset_vec     00000
+__Lrparam                                 rparam        00000
+__Lsfr                                    sfr           00000
+__Lsmallconst                             smallconst    01000
+__Lspace_0                                (abs)         00000
+__Lspace_1                                (abs)         00000
+__Lspace_2                                (abs)         00000
+__Lstack                                  stack         00000
+__Lstruct                                 struct        00000
+__Ltemp                                   temp          0004B
+__Ltext                                   text          00000
+__Ltext0                                  text0         00000
+__Ltext1                                  text1         00000
+__Ltext10                                 text10        00000
+__Ltext11                                 text11        00000
+__Ltext12                                 text12        00000
+__Ltext13                                 text13        00000
+__Ltext14                                 text14        00000
+__Ltext15                                 text15        00000
+__Ltext16                                 text16        00000
+__Ltext17                                 text17        00000
+__Ltext18                                 text18        00000
+__Ltext19                                 text19        00000
+__Ltext2                                  text2         00000
+__Ltext20                                 text20        00000
+__Ltext21                                 text21        00000
+__Ltext22                                 text22        00000
+__Ltext23                                 text23        00000
+__Ltext24                                 text24        00000
+__Ltext25                                 text25        00000
+__Ltext26                                 text26        00000
+__Ltext27                                 text27        00000
+__Ltext28                                 text28        00000
+__Ltext29                                 text29        00000
+__Ltext3                                  text3         00000
+__Ltext30                                 text30        00000
+__Ltext31                                 text31        00000
+__Ltext32                                 text32        00000
+__Ltext33                                 text33        00000
+__Ltext34                                 text34        00000
+__Ltext35                                 text35        00000
+__Ltext36                                 text36        00000
+__Ltext37                                 text37        00000
+__Ltext38                                 text38        00000
+__Ltext39                                 text39        00000
+__Ltext4                                  text4         00000
+__Ltext40                                 text40        00000
+__Ltext41                                 text41        00000
+__Ltext42                                 text42        00000
+__Ltext43                                 text43        00000
+__Ltext44                                 text44        00000
+__Ltext45                                 text45        00000
+__Ltext46                                 text46        00000
+__Ltext47                                 text47        00000
+__Ltext48                                 text48        00000
+__Ltext49                                 text49        00000
+__Ltext5                                  text5         00000
+__Ltext50                                 text50        00000
+__Ltext51                                 text51        00000
+__Ltext52                                 text52        00000
+__Ltext53                                 text53        00000
+__Ltext54                                 text54        00000
+__Ltext55                                 text55        00000
+__Ltext56                                 text56        00000
+__Ltext57                                 text57        00000
+__Ltext58                                 text58        00000
+__Ltext59                                 text59        00000
+__Ltext6                                  text6         00000
+__Ltext60                                 text60        00000
+__Ltext61                                 text61        00000
+__Ltext62                                 text62        00000
+__Ltext63                                 text63        00000
+__Ltext64                                 text64        00000
+__Ltext66                                 text66        00000
+__Ltext67                                 text67        00000
+__Ltext68                                 text68        00000
+__Ltext69                                 text69        00000
+__Ltext7                                  text7         00000
+__Ltext70                                 text70        00000
+__Ltext71                                 text71        00000
+__Ltext8                                  text8         00000
+__Ltext9                                  text9         00000
+__S0                                      (abs)         1FFFE
+__S1                                      (abs)         001C3
+__S2                                      (abs)         00000
+___extmem_base                            (abs)         20000
+___inthi_sp                               stack         00000
+___intlo_sp                               stack         00000
+___lldiv                                  text44        02E22
+___lldiv@counter                          cstackCOMRAM  00021
+___lldiv@dividend                         cstackCOMRAM  00015
+___lldiv@divisor                          cstackCOMRAM  00019
+___lldiv@quotient                         cstackCOMRAM  0001D
+___llmod                                  text43        02FEC
+___llmod@counter                          cstackCOMRAM  0002A
+___llmod@dividend                         cstackCOMRAM  00022
+___llmod@divisor                          cstackCOMRAM  00026
+___param_bank                             (abs)         00000
+___rparam_used                            (abs)         00001
+___sp                                     stack         00000
+___wmul                                   text37        03622
+___wmul@multiplicand                      cstackCOMRAM  00017
+___wmul@multiplier                        cstackCOMRAM  00015
+___wmul@product                           cstackCOMRAM  00019
+__accesstop                               (abs)         00060
+__activetblptr                            (abs)         00003
+__doprnt                                  text41        01ABA
+__doprnt@ap                               cstackCOMRAM  0002F
+__doprnt@c                                cstackBANK0   00069
+__doprnt@cp                               cstackBANK0   00062
+__doprnt@f                                cstackCOMRAM  0002D
+__doprnt@flag                             cstackBANK0   00068
+__doprnt@pb                               cstackCOMRAM  0002B
+__doprnt@prec                             cstackBANK0   00060
+__doprnt@val                              cstackBANK0   00064
+__end_of_ARPV4_Init                       text16        034EE
+__end_of_ARPV4_Lookup                     text31        0310A
+__end_of_ARPV4_Packet                     text50        015D0
+__end_of_ARPV4_Request                    text30        02218
+__end_of_ARPV4_Update                     text64        0357C
+__end_of_ETH_CheckLinkUp                  text60        03622
+__end_of_ETH_ComputeChecksum              text47        029EA
+__end_of_ETH_Copy                         text36        02B98
+__end_of_ETH_Dump                         text45        0354E
+__end_of_ETH_EdataRead                    text58        037BC
+__end_of_ETH_EdataWrite                   text55        037CE
+__end_of_ETH_EventHandler                 text59        0329E
+__end_of_ETH_Flush                        text49        02F86
+__end_of_ETH_GetMAC                       text17        030B0
+__end_of_ETH_GetReadPtr                   text22        0379E
+__end_of_ETH_Init                         text13        02750
+__end_of_ETH_Insert                       text34        032E2
+__end_of_ETH_NextPacketUpdate             text48        03488
+__end_of_ETH_Read16                       text35        033A0
+__end_of_ETH_ReadBlock                    text57        03208
+__end_of_ETH_ResetByteCount               text53        037B2
+__end_of_ETH_RxComputeChecksum            text46        03258
+__end_of_ETH_Send                         text56        03418
+__end_of_ETH_TxComputeChecksum            text33        02C54
+__end_of_ETH_Write16                      text29        03774
+__end_of_ETH_Write32                      text28        036FA
+__end_of_ETH_Write8                       text27        037A8
+__end_of_ETH_WriteBlock                   text54        03452
+__end_of_ETH_WriteStart                   text52        025C0
+__end_of_ETH_readLinkStatus               text61        03712
+__end_of_ICMP_EchoReply                   text25        028C6
+__end_of_ICMP_Receive                     text24        02AD0
+__end_of_INTERRUPT_Initialize             text18        037D2
+__end_of_INTERRUPT_InterruptManager       intcode       000AA
+__end_of_IPV4_Init                        text11        037C8
+__end_of_IPV4_Packet                      text23        01ABA
+__end_of_IPV4_Send                        text32        02D94
+__end_of_IPv4_Start                       text26        02426
+__end_of_MAC_getAddress                   text15        03794
+__end_of_Network_Init                     text6         036C6
+__end_of_Network_Manage                   text19        03160
+__end_of_Network_Read                     text20        02CF6
+__end_of_Network_SaveStartPosition        text21        03766
+__end_of_Network_WaitForLink              text10        03780
+__end_of_OSCILLATOR_Initialize            text5         0378A
+__end_of_PHY_Read                         text62        02F18
+__end_of_PHY_WaitForBusy                  text63        03520
+__end_of_PHY_Write                        text14        035FA
+__end_of_PIN_MANAGER_Initialize           text4         03364
+__end_of_SYSLOG_Write                     text38        034BC
+__end_of_SYSTEM_Initialize                text2         03728
+__end_of_TMR1_CallBack                    text68        03690
+__end_of_TMR1_DefaultInterruptHandler     text69        037DA
+__end_of_TMR1_ISR                         text66        035A8
+__end_of_TMR1_Initialize                  text3         035D2
+__end_of_TMR1_SetInterruptHandler         text9         03758
+__end_of_TMR1_WriteTimer                  text67        036AC
+__end_of___lldiv                          text44        02EA4
+__end_of___llmod                          text43        03052
+__end_of___wmul                           text37        03648
+__end_of__doprnt                          text41        01F66
+__end_of__initialization                  cinit         02FE2
+__end_of_broadcastMAC                     smallconst    01041
+__end_of_dpowers                          smallconst    01029
+__end_of_ipdb_init                        text12        02E22
+__end_of_main                             text0         0373A
+__end_of_memcpy                           text51        03326
+__end_of_printf                           text40        033DC
+__end_of_putch                            text42        037D8
+__end_of_rtcc_handler                     text70        0374A
+__end_of_rtcc_init                        text8         0366C
+__end_of_spi_itf_init                     text1         037D6
+__end_of_time                             text39        031B6
+__end_of_timersInit                       text7         036E0
+__end_of_xorSequences                     smallconst    0103B
+__initialization                          cinit         02F86
+__mediumconst                             mediumconst   00000
+__pbssBANK0                               bssBANK0      000E9
+__pbssBANK1                               bssBANK1      00100
+__pbssCOMRAM                              bssCOMRAM     00038
+__pcinit                                  cinit         02F86
+__pcstackBANK0                            cstackBANK0   00060
+__pcstackBANK1                            cstackBANK1   001BF
+__pcstackCOMRAM                           cstackCOMRAM  00001
+__pdataBANK1                              dataBANK1     001B9
+__pdataCOMRAM                             dataCOMRAM    00049
+__pidataBANK1                             idataBANK1    037BC
+__pidataCOMRAM                            idataCOMRAM   037D2
+__pintcode                                intcode       00008
+__pnvBANK0                                nvBANK0       000FD
+__pnvCOMRAM                               nvCOMRAM      00047
+__psmallconst                             smallconst    01000
+__ptext0                                  text0         03728
+__ptext1                                  text1         037D4
+__ptext10                                 text10        03774
+__ptext11                                 text11        037C2
+__ptext12                                 text12        02D94
+__ptext13                                 text13        025C0
+__ptext14                                 text14        035D2
+__ptext15                                 text15        0378A
+__ptext16                                 text16        034BC
+__ptext17                                 text17        03052
+__ptext18                                 text18        037CE
+__ptext19                                 text19        0310A
+__ptext2                                  text2         03712
+__ptext20                                 text20        02C54
+__ptext21                                 text21        03758
+__ptext22                                 text22        03794
+__ptext23                                 text23        015D0
+__ptext24                                 text24        029EA
+__ptext25                                 text25        02750
+__ptext26                                 text26        02218
+__ptext27                                 text27        0379E
+__ptext28                                 text28        036E0
+__ptext29                                 text29        03766
+__ptext3                                  text3         035A8
+__ptext30                                 text30        01F66
+__ptext31                                 text31        030B0
+__ptext32                                 text32        02CF6
+__ptext33                                 text33        02B98
+__ptext34                                 text34        0329E
+__ptext35                                 text35        03364
+__ptext36                                 text36        02AD0
+__ptext37                                 text37        03622
+__ptext38                                 text38        03488
+__ptext39                                 text39        03160
+__ptext4                                  text4         03326
+__ptext40                                 text40        033A0
+__ptext41                                 text41        01ABA
+__ptext42                                 text42        037D6
+__ptext43                                 text43        02FEC
+__ptext44                                 text44        02E22
+__ptext45                                 text45        03520
+__ptext46                                 text46        03208
+__ptext47                                 text47        028C6
+__ptext48                                 text48        03452
+__ptext49                                 text49        02F18
+__ptext5                                  text5         03780
+__ptext50                                 text50        0108E
+__ptext51                                 text51        032E2
+__ptext52                                 text52        02426
+__ptext53                                 text53        037A8
+__ptext54                                 text54        03418
+__ptext55                                 text55        037C8
+__ptext56                                 text56        033DC
+__ptext57                                 text57        031B6
+__ptext58                                 text58        037B2
+__ptext59                                 text59        03258
+__ptext6                                  text6         036AC
+__ptext60                                 text60        035FA
+__ptext61                                 text61        036FA
+__ptext62                                 text62        02EA4
+__ptext63                                 text63        034EE
+__ptext64                                 text64        0354E
+__ptext66                                 text66        0357C
+__ptext67                                 text67        03690
+__ptext68                                 text68        0366C
+__ptext69                                 text69        037D8
+__ptext7                                  text7         036C6
+__ptext70                                 text70        0373A
+__ptext71                                 text71        00000
+__ptext8                                  text8         03648
+__ptext9                                  text9         0374A
+__ramtop                                  ramtop        01000
+__size_of_ARPV4_Init                      (abs)         00000
+__size_of_ARPV4_Lookup                    (abs)         00000
+__size_of_ARPV4_Packet                    (abs)         00000
+__size_of_ARPV4_Request                   (abs)         00000
+__size_of_ARPV4_Update                    (abs)         00000
+__size_of_ETH_CheckLinkUp                 (abs)         00000
+__size_of_ETH_ComputeChecksum             (abs)         00000
+__size_of_ETH_Copy                        (abs)         00000
+__size_of_ETH_Dump                        (abs)         00000
+__size_of_ETH_EdataRead                   (abs)         00000
+__size_of_ETH_EdataWrite                  (abs)         00000
+__size_of_ETH_EventHandler                (abs)         00000
+__size_of_ETH_Flush                       (abs)         00000
+__size_of_ETH_GetMAC                      (abs)         00000
+__size_of_ETH_GetReadPtr                  (abs)         00000
+__size_of_ETH_Init                        (abs)         00000
+__size_of_ETH_Insert                      (abs)         00000
+__size_of_ETH_NextPacketUpdate            (abs)         00000
+__size_of_ETH_Read16                      (abs)         00000
+__size_of_ETH_ReadBlock                   (abs)         00000
+__size_of_ETH_ResetByteCount              (abs)         00000
+__size_of_ETH_RxComputeChecksum           (abs)         00000
+__size_of_ETH_Send                        (abs)         00000
+__size_of_ETH_TxComputeChecksum           (abs)         00000
+__size_of_ETH_Write16                     (abs)         00000
+__size_of_ETH_Write32                     (abs)         00000
+__size_of_ETH_Write8                      (abs)         00000
+__size_of_ETH_WriteBlock                  (abs)         00000
+__size_of_ETH_WriteStart                  (abs)         00000
+__size_of_ETH_readLinkStatus              (abs)         00000
+__size_of_ICMP_EchoReply                  (abs)         00000
+__size_of_ICMP_Receive                    (abs)         00000
+__size_of_INTERRUPT_Initialize            (abs)         00000
+__size_of_INTERRUPT_InterruptManager      (abs)         00000
+__size_of_IPV4_Init                       (abs)         00000
+__size_of_IPV4_Packet                     (abs)         00000
+__size_of_IPV4_Send                       (abs)         00000
+__size_of_IPv4_Start                      (abs)         00000
+__size_of_MAC_getAddress                  (abs)         00000
+__size_of_Network_Init                    (abs)         00000
+__size_of_Network_Manage                  (abs)         00000
+__size_of_Network_Read                    (abs)         00000
+__size_of_Network_SaveStartPosition       (abs)         00000
+__size_of_Network_WaitForLink             (abs)         00000
+__size_of_OSCILLATOR_Initialize           (abs)         00000
+__size_of_PHY_Read                        (abs)         00000
+__size_of_PHY_WaitForBusy                 (abs)         00000
+__size_of_PHY_Write                       (abs)         00000
+__size_of_PIN_MANAGER_Initialize          (abs)         00000
+__size_of_SYSLOG_Write                    (abs)         00000
+__size_of_SYSTEM_Initialize               (abs)         00000
+__size_of_TMR1_CallBack                   (abs)         00000
+__size_of_TMR1_DefaultInterruptHandler    (abs)         00000
+__size_of_TMR1_ISR                        (abs)         00000
+__size_of_TMR1_Initialize                 (abs)         00000
+__size_of_TMR1_SetInterruptHandler        (abs)         00000
+__size_of_TMR1_WriteTimer                 (abs)         00000
+__size_of___lldiv                         (abs)         00000
+__size_of___llmod                         (abs)         00000
+__size_of___wmul                          (abs)         00000
+__size_of__doprnt                         (abs)         00000
+__size_of_ipdb_init                       (abs)         00000
+__size_of_main                            (abs)         00000
+__size_of_memcpy                          (abs)         00000
+__size_of_printf                          (abs)         00000
+__size_of_putch                           (abs)         00000
+__size_of_rtcc_handler                    (abs)         00000
+__size_of_rtcc_init                       (abs)         00000
+__size_of_spi_itf_init                    (abs)         00000
+__size_of_time                            (abs)         00000
+__size_of_timersInit                      (abs)         00000
+__smallconst                              smallconst    01000
+_arpMap                                   bssBANK1      00128
+_arpTimer                                 bssCOMRAM     00043
+_broadcastMAC                             smallconst    0103B
+_device_time                              bssBANK0      000EF
+_dpowers                                  smallconst    01001
+_errataTemp                               (abs)         00E7E
+_ethData                                  bssBANK0      000E9
+_hostMacAddress                           bssBANK1      001B3
+_ip_database_info                         bssBANK1      00100
+_ipdb_init                                text12        02D94
+_ipv4Header                               bssBANK1      00190
+_lfsr_value                               dataCOMRAM    00049
+_macAddress                               dataBANK1     001B9
+_main                                     text0         03728
+_memcpy                                   text51        032E2
+_networkStartPosition                     bssCOMRAM     0003E
+_nextPacketPointer                        bssCOMRAM     0003C
+_portUnreachable                          bssBANK0      000F9
+_printf                                   text40        033A0
+_putch                                    text42        037D6
+_remoteIpv4Address                        bssBANK1      00124
+_rtcc_handler                             text70        0373A
+_rtcc_init                                text8         03648
+_rxPacketStatusVector                     bssCOMRAM     00038
+_spi_itf_init                             text1         037D4
+_time                                     text39        03160
+_timer1ReloadVal                          nvCOMRAM      00047
+_timersInit                               text7         036C6
+_xorSequences                             smallconst    01029
+_xor_mask                                 dataCOMRAM    0004A
+btemp                                     temp          0004B
+end_of_initialization                     cinit         02FE2
+int$flags                                 temp          0004B
+intlevel0                                 text          00000
+intlevel1                                 text          00000
+intlevel2                                 text          00000
+intlevel3                                 text          00000
+ipdb_init@x                               cstackCOMRAM  00015
+makeIpv4AddresstoStr@ip_str               bssBANK1      001A4
+memcpy@d                                  cstackCOMRAM  0001C
+memcpy@d1                                 cstackCOMRAM  00015
+memcpy@n                                  cstackCOMRAM  00019
+memcpy@s                                  cstackCOMRAM  0001E
+memcpy@s1                                 cstackCOMRAM  00017
+memcpy@tmp                                cstackCOMRAM  0001B
+printf@ap                                 cstackBANK0   00070
+printf@f                                  cstackBANK0   0006A
+printf@pb                                 cstackBANK0   00072
+stackhi                                   (abs)         00E7D
+stacklo                                   (abs)         001C3
+start                                     init          000AA
+start_initialization                      cinit         02F86
+strtok@sp                                 bssBANK0      000F7
+time@gie_val                              cstackCOMRAM  00019
+time@t                                    cstackCOMRAM  00015
+time@the_time                             cstackCOMRAM  0001A
+wtemp6                                    temp          0004C
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 52 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   14
+ This function calls:
+		_Network_Manage
+		_SYSTEM_Initialize
+		_spi_itf_init
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _spi_itf_init *****************
+ Defined at:
+		line 3 in file "src/itf/spi/spi_itf.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _SYSTEM_Initialize *****************
+ Defined at:
+		line 50 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_INTERRUPT_Initialize
+		_Network_Init
+		_OSCILLATOR_Initialize
+		_PIN_MANAGER_Initialize
+		_TMR1_Initialize
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR1_Initialize *****************
+ Defined at:
+		line 64 in file "mcc_generated_files/tmr1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_TMR1_SetInterruptHandler
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _PIN_MANAGER_Initialize *****************
+ Defined at:
+		line 52 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _OSCILLATOR_Initialize *****************
+ Defined at:
+		line 60 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _Network_Init *****************
+ Defined at:
+		line 55 in file "mcc_generated_files/TCPIPLibrary/network.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_ARPV4_Init
+		_ETH_Init
+		_IPV4_Init
+		_Network_WaitForLink
+		_rtcc_init
+		_timersInit
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _timersInit *****************
+ Defined at:
+		line 65 in file "mcc_generated_files/TCPIPLibrary/network.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_time
+ This function is called by:
+		_Network_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _rtcc_init *****************
+ Defined at:
+		line 62 in file "mcc_generated_files/TCPIPLibrary/rtcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_TMR1_SetInterruptHandler
+ This function is called by:
+		_Network_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR1_SetInterruptHandler *****************
+ Defined at:
+		line 174 in file "mcc_generated_files/tmr1.c"
+ Parameters:    Size  Location     Type
+  InterruptHan    3   20[COMRAM] PTR FTN()void 
+		 -> rtcc_handler(1), TMR1_DefaultInterruptHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_TMR1_Initialize
+		_rtcc_init
+ This function uses a non-reentrant model
+
+
+ *************** function _Network_WaitForLink *****************
+ Defined at:
+		line 71 in file "mcc_generated_files/TCPIPLibrary/network.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_ETH_CheckLinkUp
+ This function is called by:
+		_Network_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _IPV4_Init *****************
+ Defined at:
+		line 55 in file "mcc_generated_files/TCPIPLibrary/ipv4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ipdb_init
+ This function is called by:
+		_Network_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _ipdb_init *****************
+ Defined at:
+		line 31 in file "mcc_generated_files/TCPIPLibrary/ip_database.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1   20[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_IPV4_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Init *****************
+ Defined at:
+		line 94 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  mac             2   41[COMRAM] PTR const struct .
+		 -> macAddress(6), 
+  phycon1Value    2   39[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_ETH_CheckLinkUp
+		_ETH_Flush
+		_MAC_getAddress
+		_PHY_Write
+ This function is called by:
+		_Network_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _PHY_Write *****************
+ Defined at:
+		line 321 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     enum E5091
+  data            2   22[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  reg             1   24[COMRAM] enum E5091
+  GIESave         1   25[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E5100
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_PHY_WaitForBusy
+ This function is called by:
+		_ETH_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _MAC_getAddress *****************
+ Defined at:
+		line 46 in file "mcc_generated_files/TCPIPLibrary/mac_address.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] PTR const struct .
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ETH_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _ARPV4_Init *****************
+ Defined at:
+		line 87 in file "mcc_generated_files/TCPIPLibrary/arpv4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1   22[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_GetMAC
+ This function is called by:
+		_Network_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_GetMAC *****************
+ Defined at:
+		line 827 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  mac             2   20[COMRAM] PTR unsigned char 
+		 -> hostMacAddress(6), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ARPV4_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_Initialize *****************
+ Defined at:
+		line 52 in file "mcc_generated_files/interrupt_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _Network_Manage *****************
+ Defined at:
+		line 76 in file "mcc_generated_files/TCPIPLibrary/network.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  now             4    0[BANK1 ] long 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   13
+ This function calls:
+		_ARPV4_Update
+		_ETH_EventHandler
+		_Network_Read
+		_time
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _Network_Read *****************
+ Defined at:
+		line 99 in file "mcc_generated_files/TCPIPLibrary/network.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  debug_str      80    0        unsigned char [80]
+  header         14  122[BANK0 ] struct .
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0      14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      18       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       18 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_ARPV4_Packet
+		_ETH_Flush
+		_ETH_NextPacketUpdate
+		_ETH_ReadBlock
+		_IPV4_Packet
+		_Network_SaveStartPosition
+ This function is called by:
+		_Network_Manage
+ This function uses a non-reentrant model
+
+
+ *************** function _Network_SaveStartPosition *****************
+ Defined at:
+		line 129 in file "mcc_generated_files/TCPIPLibrary/network.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_GetReadPtr
+ This function is called by:
+		_Network_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_GetReadPtr *****************
+ Defined at:
+		line 857 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] unsigned int 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_Network_SaveStartPosition
+ This function uses a non-reentrant model
+
+
+ *************** function _IPV4_Packet *****************
+ Defined at:
+		line 92 in file "mcc_generated_files/TCPIPLibrary/ipv4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  msg            40    0        unsigned char [40]
+  cksm            2  116[BANK0 ] unsigned int 
+  length          2  113[BANK0 ] unsigned int 
+  hdrLen          1  115[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E423
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0      28       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      33       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       33 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_ETH_Dump
+		_ETH_ReadBlock
+		_ETH_RxComputeChecksum
+		_ICMP_Receive
+ This function is called by:
+		_Network_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _ICMP_Receive *****************
+ Defined at:
+		line 58 in file "mcc_generated_files/TCPIPLibrary/icmp.c"
+ Parameters:    Size  Location     Type
+  ipv4Hdr         2   74[BANK0 ] PTR struct .
+		 -> ipv4Header(20), 
+ Auto vars:     Size  Location     Type
+  icmpHdr         4   81[BANK0 ] struct .
+  ret             1   80[BANK0 ] enum E392
+ Return value:  Size  Location     Type
+                  1    wreg      enum E392
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      11       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_ETH_Dump
+		_ETH_Read16
+		_ETH_ReadBlock
+		_ICMP_EchoReply
+ This function is called by:
+		_IPV4_Packet
+ This function uses a non-reentrant model
+
+
+ *************** function _ICMP_EchoReply *****************
+ Defined at:
+		line 99 in file "mcc_generated_files/TCPIPLibrary/icmp.c"
+ Parameters:    Size  Location     Type
+  ipv4Hdr         2   57[BANK0 ] PTR struct .
+		 -> ipv4Header(20), 
+ Auto vars:     Size  Location     Type
+  ipv4PayloadL    2   71[BANK0 ] unsigned int 
+  icmp_cksm_st    2   67[BANK0 ] unsigned int 
+  cksm            2   69[BANK0 ] unsigned int 
+  sequence        2   65[BANK0 ] unsigned int 
+  identifier      2   63[BANK0 ] unsigned int 
+  ret             1   73[BANK0 ] enum E392
+ Return value:  Size  Location     Type
+                  1    wreg      enum E392
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0      11       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      17       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_ETH_Copy
+		_ETH_Insert
+		_ETH_Read16
+		_ETH_TxComputeChecksum
+		_ETH_Write16
+		_IPV4_Send
+		_IPv4_Start
+ This function is called by:
+		_ICMP_Receive
+ This function uses a non-reentrant model
+
+
+ *************** function _IPv4_Start *****************
+ Defined at:
+		line 174 in file "mcc_generated_files/TCPIPLibrary/ipv4.c"
+ Parameters:    Size  Location     Type
+  destAddress     4   35[COMRAM] unsigned long 
+  protocol        1   39[COMRAM] enum E236
+ Auto vars:     Size  Location     Type
+  targetAddres    4   48[COMRAM] unsigned long 
+  macAddress      2   52[COMRAM] PTR const struct .
+		 -> arpMap.macAddress(6), NULL(0), broadcastMAC(6), arpMap(104), 
+  ret             1   54[COMRAM] enum E392
+ Return value:  Size  Location     Type
+                  1    wreg      enum E392
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        20       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       20 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_ARPV4_Lookup
+		_ARPV4_Request
+		_ETH_Write16
+		_ETH_Write32
+		_ETH_Write8
+		_ETH_WriteStart
+ This function is called by:
+		_ICMP_EchoReply
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Write8 *****************
+ Defined at:
+		line 469 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  data            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  data            1   20[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataWrite
+ This function is called by:
+		_IPv4_Start
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Write32 *****************
+ Defined at:
+		line 499 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  data            4   20[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataWrite
+ This function is called by:
+		_IPv4_Start
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Write16 *****************
+ Defined at:
+		line 478 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  data            2   20[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataWrite
+ This function is called by:
+		_IPv4_Start
+		_ICMP_EchoReply
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function _ARPV4_Request *****************
+ Defined at:
+		line 198 in file "mcc_generated_files/TCPIPLibrary/arpv4.c"
+ Parameters:    Size  Location     Type
+  destAddress     4   31[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  header         28   29[BANK0 ] struct .
+  ret             1   28[BANK0 ] enum E476
+ Return value:  Size  Location     Type
+                  1    wreg      enum E476
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0      29       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0      28       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4      57       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       61 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_ETH_Send
+		_ETH_WriteBlock
+		_ETH_WriteStart
+		_memcpy
+ This function is called by:
+		_IPv4_Start
+ This function uses a non-reentrant model
+
+
+ *************** function _ARPV4_Lookup *****************
+ Defined at:
+		line 238 in file "mcc_generated_files/TCPIPLibrary/arpv4.c"
+ Parameters:    Size  Location     Type
+  ip_address      4   20[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  entry_pointe    2   28[COMRAM] PTR struct .
+		 -> arpMap(104), 
+  x               1   30[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] PTR struct .
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        11       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_IPv4_Start
+ This function uses a non-reentrant model
+
+
+ *************** function _IPV4_Send *****************
+ Defined at:
+		line 230 in file "mcc_generated_files/TCPIPLibrary/ipv4.c"
+ Parameters:    Size  Location     Type
+  payloadLengt    2   50[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  totalLength     2   19[BANK0 ] unsigned int 
+  cksm            2   17[BANK0 ] unsigned int 
+  ret             1   16[BANK0 ] enum E392
+ Return value:  Size  Location     Type
+                  1    wreg      enum E392
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_ETH_Insert
+		_ETH_Send
+		_ETH_TxComputeChecksum
+ This function is called by:
+		_ICMP_EchoReply
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_TxComputeChecksum *****************
+ Defined at:
+		line 779 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  position        2   38[COMRAM] unsigned int 
+  len             2   40[COMRAM] unsigned int 
+  seed            2   42[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  cksm            4   46[COMRAM] unsigned long 
+  rxptr           2   44[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   38[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0      12       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        12      12       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       24 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_ETH_ComputeChecksum
+ This function is called by:
+		_IPV4_Send
+		_ICMP_EchoReply
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Insert *****************
+ Defined at:
+		line 623 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  data            2   20[COMRAM] PTR unsigned char 
+		 -> ICMP_PortUnreachable@cksm(2), ICMP_EchoReply@cksm(2), IPV4_Send@cksm(2), IPV4_Send@totalLength(2), 
+  len             2   22[COMRAM] unsigned int 
+  offset          2   24[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  current_tx_p    2   26[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataWrite
+ This function is called by:
+		_IPV4_Send
+		_ICMP_EchoReply
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Read16 *****************
+ Defined at:
+		line 403 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  ret             2   22[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataRead
+ This function is called by:
+		_ICMP_Receive
+		_ICMP_EchoReply
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Copy *****************
+ Defined at:
+		line 693 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  len             2   25[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  tmp_len         2   29[BANK0 ] unsigned int 
+  timer           2   27[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E4853
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_SYSLOG_Write
+		___wmul
+ This function is called by:
+		_ICMP_EchoReply
+		_ICMP_PortUnreachable
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c"
+ Parameters:    Size  Location     Type
+  multiplier      2   20[COMRAM] unsigned int 
+  multiplicand    2   22[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2   24[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ETH_Copy
+ This function uses a non-reentrant model
+
+
+ *************** function _SYSLOG_Write *****************
+ Defined at:
+		line 50 in file "mcc_generated_files/TCPIPLibrary/syslog.c"
+ Parameters:    Size  Location     Type
+  message         2   52[COMRAM] PTR const unsigned char 
+		 -> STR_3(15), 
+ Auto vars:     Size  Location     Type
+  t               2   23[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_printf
+		_time
+ This function is called by:
+		_ETH_Copy
+ This function uses a non-reentrant model
+
+
+ *************** function _time *****************
+ Defined at:
+		line 163 in file "mcc_generated_files/TCPIPLibrary/rtcc.c"
+ Parameters:    Size  Location     Type
+  t               2   20[COMRAM] PTR long 
+		 -> Network_Manage@now(4), arpTimer(4), NULL(0), 
+ Auto vars:     Size  Location     Type
+  the_time        4   25[COMRAM] long 
+  gie_val         1   24[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   20[COMRAM] long 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_timersInit
+		_Network_Manage
+		_SYSLOG_Write
+		_SYSLOG_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _printf *****************
+ Defined at:
+		line 13 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\printf.c"
+ Parameters:    Size  Location     Type
+  f               2   10[BANK0 ] PTR const unsigned char 
+		 -> STR_2(10), STR_1(29), 
+ Auto vars:     Size  Location     Type
+  pb              5   18[BANK0 ] struct __prbuf
+  ap              2   16[BANK0 ] PTR void [1]
+		 -> ?_sprintf(2), ?_printf(2), 
+ Return value:  Size  Location     Type
+                  2   10[BANK0 ] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      13       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		__doprnt
+ This function is called by:
+		_SYSLOG_Write
+		_SYSLOG_Init
+ This function uses a non-reentrant model
+
+
+ *************** function __doprnt *****************
+ Defined at:
+		line 458 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c"
+ Parameters:    Size  Location     Type
+  pb              2   42[COMRAM] PTR struct __prbuf
+		 -> sprintf@pb(5), printf@pb(5), 
+  f               2   44[COMRAM] PTR const unsigned char 
+		 -> STR_6(12), STR_2(10), STR_1(29), 
+  ap              2   46[COMRAM] PTR PTR void 
+		 -> sprintf@ap(2), printf@ap(2), 
+ Auto vars:     Size  Location     Type
+  val             4    4[BANK0 ] unsigned long 
+  tmpval          4    0        struct .
+  cp              2    2[BANK0 ] PTR const unsigned char 
+		 -> ?_sprintf(2), ?_printf(2), STR_7(7), makeIpv4AddresstoStr@ip_str(15), 
+		 -> STR_3(15), NULL(0), 
+  prec            2    0[BANK0 ] int 
+  len             2    0        unsigned int 
+  c               1    9[BANK0 ] char 
+  flag            1    8[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2   42[COMRAM] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0      10       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        10      10       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       20 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Absolute function
+		___lldiv
+		___llmod
+		_putch
+ This function is called by:
+		_printf
+		_sprintf
+ This function uses a non-reentrant model
+
+
+ *************** function _putch *****************
+ Defined at:
+		line 7 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\putch.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_printf
+		__doprnt
+ This function uses a non-reentrant model
+
+
+ *************** function ___llmod *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c"
+ Parameters:    Size  Location     Type
+  dividend        4   33[COMRAM] unsigned long 
+  divisor         4   37[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  counter         1   41[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   33[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		__doprnt
+ This function uses a non-reentrant model
+
+
+ *************** function ___lldiv *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c"
+ Parameters:    Size  Location     Type
+  dividend        4   20[COMRAM] unsigned long 
+  divisor         4   24[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  quotient        4   28[COMRAM] unsigned long 
+  counter         1   32[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   20[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        13       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		__doprnt
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Dump *****************
+ Defined at:
+		line 638 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  length          2   20[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_IPV4_Packet
+		_ICMP_Receive
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_RxComputeChecksum *****************
+ Defined at:
+		line 806 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  len             2   38[COMRAM] unsigned int 
+  seed            2   40[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  cksm            4   48[COMRAM] unsigned long 
+  rxptr           2   46[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   38[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_ETH_ComputeChecksum
+ This function is called by:
+		_IPV4_Packet
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_ComputeChecksum *****************
+ Defined at:
+		line 735 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  len             2   20[COMRAM] unsigned int 
+  seed            2   22[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  cksm            4   32[COMRAM] unsigned long 
+  v               2   36[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        18       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       18 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataRead
+ This function is called by:
+		_ETH_TxComputeChecksum
+		_ETH_RxComputeChecksum
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_NextPacketUpdate *****************
+ Defined at:
+		line 270 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataRead
+ This function is called by:
+		_Network_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Flush *****************
+ Defined at:
+		line 652 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_Network_Read
+		_ETH_Init
+ This function uses a non-reentrant model
+
+
+ *************** function _ARPV4_Packet *****************
+ Defined at:
+		line 101 in file "mcc_generated_files/TCPIPLibrary/arpv4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1   39[BANK0 ] unsigned char 
+  arpPtr          2   36[BANK0 ] PTR struct .
+		 -> arpMap(104), 
+  x               1   38[BANK0 ] unsigned char 
+  header         28   42[BANK0 ] struct .
+  entryPointer    2   40[BANK0 ] PTR struct .
+		 -> arpMap(104), 
+  length          2   32[BANK0 ] unsigned int 
+  ret             1   35[BANK0 ] enum E476
+  mergeFlag       1   34[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E476
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0      38       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0      32       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      70       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       70 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_ETH_ReadBlock
+		_ETH_Send
+		_ETH_WriteBlock
+		_ETH_WriteStart
+		_memcpy
+ This function is called by:
+		_Network_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _memcpy *****************
+ Defined at:
+		line 27 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memcpy.c"
+ Parameters:    Size  Location     Type
+  d1              2   20[COMRAM] PTR void 
+		 -> ARPV4_Request@header(28), header.sha(6), ARPV4_Packet@header(28), 
+  s1              2   22[COMRAM] PTR const void 
+		 -> hostMacAddress(6), 
+  n               2   24[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  s               2   29[COMRAM] PTR const unsigned char 
+		 -> hostMacAddress(6), 
+  d               2   27[COMRAM] PTR unsigned char 
+		 -> ARPV4_Request@header(28), header.sha(6), ARPV4_Packet@header(28), 
+  tmp             1   26[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] PTR void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        11       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ARPV4_Packet
+		_ARPV4_Request
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_WriteStart *****************
+ Defined at:
+		line 541 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  dest_mac        2   20[COMRAM] PTR const struct .
+		 -> arpMap.macAddress(6), NULL(0), broadcastMAC(6), header.sha(6), 
+		 -> ARPV4_Packet@header(28), arpMap(104), 
+  type            2   22[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      enum E476
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataWrite
+		_ETH_ResetByteCount
+ This function is called by:
+		_ARPV4_Packet
+		_ARPV4_Request
+		_IPv4_Start
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_ResetByteCount *****************
+ Defined at:
+		line 867 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ETH_WriteStart
+		_ETH_TxReset
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_WriteBlock *****************
+ Defined at:
+		line 524 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  buffer          2   20[COMRAM] PTR const void 
+		 -> ARPV4_Request@header(28), ARPV4_Packet@header(28), 
+  length          2   22[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  p               2   24[COMRAM] PTR unsigned char 
+		 -> ARPV4_Request@header(28), ARPV4_Packet@header(28), 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] unsigned int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataWrite
+ This function is called by:
+		_ARPV4_Packet
+		_ARPV4_Request
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_EdataWrite *****************
+ Defined at:
+		line 76 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  d               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  d               1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ETH_Write8
+		_ETH_Write16
+		_ETH_Write32
+		_ETH_WriteBlock
+		_ETH_WriteStart
+		_ETH_Insert
+		_ETH_Write24
+		_ETH_WriteString
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_Send *****************
+ Defined at:
+		line 595 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  packetEnd       2   20[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E476
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ARPV4_Packet
+		_ARPV4_Request
+		_IPV4_Send
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_ReadBlock *****************
+ Defined at:
+		line 449 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  buffer          2   20[COMRAM] PTR void 
+		 -> ICMP_Receive@icmpHdr(4), ipv4Header(20), Network_Read@header(14), ARPV4_Packet@header(28), 
+  length          2   22[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  p               2   26[COMRAM] PTR unsigned char 
+		 -> ICMP_Receive@icmpHdr(4), ipv4Header(20), Network_Read@header(14), ARPV4_Packet@header(28), 
+  len             2   24[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   20[COMRAM] unsigned int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_ETH_EdataRead
+ This function is called by:
+		_ARPV4_Packet
+		_Network_Read
+		_IPV4_Packet
+		_ICMP_Receive
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_EdataRead *****************
+ Defined at:
+		line 70 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ETH_NextPacketUpdate
+		_ETH_Read16
+		_ETH_ReadBlock
+		_ETH_ComputeChecksum
+		_ETH_Read8
+		_ETH_Read32
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_EventHandler *****************
+ Defined at:
+		line 221 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_ETH_CheckLinkUp
+		_PHY_Read
+ This function is called by:
+		_Network_Manage
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_CheckLinkUp *****************
+ Defined at:
+		line 201 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           4   35[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_ETH_readLinkStatus
+ This function is called by:
+		_Network_WaitForLink
+		_ETH_Init
+		_ETH_EventHandler
+ This function uses a non-reentrant model
+
+
+ *************** function _ETH_readLinkStatus *****************
+ Defined at:
+		line 196 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  4   31[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_PHY_Read
+ This function is called by:
+		_ETH_CheckLinkUp
+ This function uses a non-reentrant model
+
+
+ *************** function _PHY_Read *****************
+ Defined at:
+		line 354 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+  reg             1    wreg     enum E5091
+ Auto vars:     Size  Location     Type
+  reg             1   26[COMRAM] enum E5091
+  ret             4   27[COMRAM] long 
+ Return value:  Size  Location     Type
+                  4   22[COMRAM] long 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_PHY_WaitForBusy
+ This function is called by:
+		_ETH_readLinkStatus
+		_ETH_EventHandler
+ This function uses a non-reentrant model
+
+
+ *************** function _PHY_WaitForBusy *****************
+ Defined at:
+		line 302 in file "mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  timeout         1   21[COMRAM] unsigned char 
+  ret             1   20[COMRAM] enum E5100
+ Return value:  Size  Location     Type
+                  1    wreg      enum E5100
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_PHY_Write
+		_PHY_Read
+ This function uses a non-reentrant model
+
+
+ *************** function _ARPV4_Update *****************
+ Defined at:
+		line 183 in file "mcc_generated_files/TCPIPLibrary/arpv4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  x               1   22[COMRAM] unsigned char 
+  entryPointer    2   20[COMRAM] PTR struct .
+		 -> arpMap(104), 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_Network_Manage
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_InterruptManager *****************
+ Defined at:
+		line 58 in file "mcc_generated_files/interrupt_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:         18       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        18       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       18 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_TMR1_ISR
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR1_ISR *****************
+ Defined at:
+		line 145 in file "mcc_generated_files/tmr1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_TMR1_CallBack
+		_TMR1_WriteTimer
+ This function is called by:
+		_INTERRUPT_InterruptManager
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR1_WriteTimer *****************
+ Defined at:
+		line 118 in file "mcc_generated_files/tmr1.c"
+ Parameters:    Size  Location     Type
+  timerVal        2    0[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_TMR1_ISR
+		_TMR1_Reload
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR1_CallBack *****************
+ Defined at:
+		line 164 in file "mcc_generated_files/tmr1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, pclath, tosl, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Absolute function
+		_TMR1_DefaultInterruptHandler
+		_rtcc_handler
+ This function is called by:
+		_TMR1_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR1_DefaultInterruptHandler *****************
+ Defined at:
+		line 178 in file "mcc_generated_files/tmr1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_TMR1_Initialize
+		_TMR1_CallBack
+ This function uses a non-reentrant model
+
+
+ *************** function _rtcc_handler *****************
+ Defined at:
+		line 95 in file "mcc_generated_files/TCPIPLibrary/rtcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_rtcc_init
+		_TMR1_CallBack
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c
+		_ETH_EdataRead 		CODE           	37B2	0000	11
+		_PHY_Read      		CODE           	2EA4	0000	117
+		_ETH_ComputeChecksum		CODE           	28C6	0000	293
+		_ETH_EdataWrite		CODE           	37C8	0000	7
+		_ETH_CheckLinkUp		CODE           	35FA	0000	41
+		_ETH_Write8    		CODE           	379E	0000	11
+		_ETH_Write32   		CODE           	36E0	0000	27
+		_ETH_Write16   		CODE           	3766	0000	15
+		_ETH_Insert    		CODE           	329E	0000	69
+		_ETH_Read16    		CODE           	3364	0000	61
+		_ETH_Init      		CODE           	25C0	0000	401
+		_ETH_RxComputeChecksum		CODE           	3208	0000	81
+		_ETH_NextPacketUpdate		CODE           	3452	0000	55
+		_ETH_Flush     		CODE           	2F18	0000	111
+		_ETH_WriteBlock		CODE           	3418	0000	59
+		_ETH_Send      		CODE           	33DC	0000	61
+		_ETH_WriteStart		CODE           	2426	0000	411
+		_ETH_ReadBlock 		CODE           	31B6	0000	83
+		_ETH_Copy      		CODE           	2AD0	0000	201
+		_ETH_GetMAC    		CODE           	3052	0000	95
+		_PHY_WaitForBusy		CODE           	34EE	0000	51
+		_ETH_ResetByteCount		CODE           	37A8	0000	11
+		_ETH_Dump      		CODE           	3520	0000	47
+		_ETH_readLinkStatus		CODE           	36FA	0000	25
+		_ETH_TxComputeChecksum		CODE           	2B98	0000	189
+		_PHY_Write     		CODE           	35D2	0000	41
+		_ETH_GetReadPtr		CODE           	3794	0000	11
+		_ETH_EventHandler		CODE           	3258	0000	71
+
+mcc_generated_files/TCPIPLibrary/ETHxxJ6x_driver.c estimated size: 2656
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+		__doprnt       		CODE           	1ABA	0000	1197
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c estimated size: 1197
+
+src/itf/spi/spi_itf.c
+		_spi_itf_init  		CODE           	37D4	0000	3
+
+src/itf/spi/spi_itf.c estimated size: 3
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\putch.c
+		_putch         		CODE           	37D6	0000	3
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\putch.c estimated size: 3
+
+mcc_generated_files/interrupt_manager.c
+		_INTERRUPT_Initialize		CODE           	37CE	0000	5
+		_INTERRUPT_InterruptManager		CODE           	0008	0000	163
+
+mcc_generated_files/interrupt_manager.c estimated size: 168
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+		___wmul        		CODE           	3622	0000	39
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c estimated size: 39
+
+mcc_generated_files/pin_manager.c
+		_PIN_MANAGER_Initialize		CODE           	3326	0000	63
+
+mcc_generated_files/pin_manager.c estimated size: 63
+
+mcc_generated_files/TCPIPLibrary/ip_database.c
+		_ipdb_init     		CODE           	2D94	0000	143
+
+mcc_generated_files/TCPIPLibrary/ip_database.c estimated size: 143
+
+mcc_generated_files/TCPIPLibrary/icmp.c
+		_ICMP_Receive  		CODE           	29EA	0000	231
+		_ICMP_EchoReply		CODE           	2750	0000	375
+
+mcc_generated_files/TCPIPLibrary/icmp.c estimated size: 606
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memcpy.c
+		_memcpy        		CODE           	32E2	0000	69
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memcpy.c estimated size: 69
+
+mcc_generated_files/TCPIPLibrary/syslog.c
+		_SYSLOG_Write  		CODE           	3488	0000	53
+
+mcc_generated_files/TCPIPLibrary/syslog.c estimated size: 53
+
+mcc_generated_files/TCPIPLibrary/network.c
+		_Network_SaveStartPosition		CODE           	3758	0000	15
+		_Network_Read  		CODE           	2C54	0000	163
+		_Network_Init  		CODE           	36AC	0000	27
+		_Network_WaitForLink		CODE           	3774	0000	13
+		_timersInit    		CODE           	36C6	0000	27
+		_Network_Manage		CODE           	310A	0000	87
+
+mcc_generated_files/TCPIPLibrary/network.c estimated size: 332
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
+		___llmod       		CODE           	2FEC	0000	103
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c estimated size: 103
+
+mcc_generated_files/TCPIPLibrary/arpv4.c
+		_ARPV4_Packet  		CODE           	108E	0000	1347
+		_ARPV4_Init    		CODE           	34BC	0000	51
+		_ARPV4_Lookup  		CODE           	30B0	0000	91
+		_ARPV4_Update  		CODE           	354E	0000	47
+		_ARPV4_Request 		CODE           	1F66	0000	691
+
+mcc_generated_files/TCPIPLibrary/arpv4.c estimated size: 2227
+
+mcc_generated_files/TCPIPLibrary/mac_address.c
+		_MAC_getAddress		CODE           	378A	0000	11
+
+mcc_generated_files/TCPIPLibrary/mac_address.c estimated size: 11
+
+mcc_generated_files/TCPIPLibrary/ipv4.c
+		_IPV4_Send     		CODE           	2CF6	0000	159
+		_IPV4_Packet   		CODE           	15D0	0000	1259
+		_IPv4_Start    		CODE           	2218	0000	527
+		_IPV4_Init     		CODE           	37C2	0000	7
+
+mcc_generated_files/TCPIPLibrary/ipv4.c estimated size: 1952
+
+mcc_generated_files/TCPIPLibrary/rtcc.c
+		_rtcc_handler  		CODE           	373A	0000	17
+		_rtcc_init     		CODE           	3648	0000	37
+		_time          		CODE           	3160	0000	87
+
+mcc_generated_files/TCPIPLibrary/rtcc.c estimated size: 141
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\printf.c
+		_printf        		CODE           	33A0	0000	61
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\printf.c estimated size: 61
+
+shared
+		_dpowers       		SMALLCONST     	1001	0000	41
+		__initialization		CODE           	2F86	0000	93
+		_xorSequences  		SMALLCONST     	1029	0000	19
+		_broadcastMAC  		SMALLCONST     	103B	0000	7
+
+shared estimated size: 160
+
+mcc_generated_files/mcc.c
+		_OSCILLATOR_Initialize		CODE           	3780	0000	11
+		_SYSTEM_Initialize		CODE           	3712	0000	23
+
+mcc_generated_files/mcc.c estimated size: 34
+
+mcc_generated_files/tmr1.c
+		_TMR1_Initialize		CODE           	35A8	0000	43
+		_TMR1_SetInterruptHandler		CODE           	374A	0000	15
+		_TMR1_DefaultInterruptHandler		CODE           	37D8	0000	3
+		_TMR1_CallBack 		CODE           	366C	0000	37
+		_TMR1_WriteTimer		CODE           	3690	0000	29
+		_TMR1_ISR      		CODE           	357C	0000	45
+
+mcc_generated_files/tmr1.c estimated size: 172
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+		___lldiv       		CODE           	2E22	0000	131
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c estimated size: 131
+
+main.c
+		_main          		CODE           	3728	0000	19
+
+main.c estimated size: 19
+
